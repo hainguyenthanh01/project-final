@@ -4,7 +4,7 @@ import * as mdb from 'mdb-ui-kit'; // lib
 import 'mdb-ui-kit/css/mdb.min.css';
 import { Route, Redirect, Switch, NavLink, useHistory } from "react-router-dom";
 import Cookies from 'js-cookie';
-
+import Logo from './images/avatar/logo.svg'
 import ac from './images/active.png'
 import classNames from 'classnames/bind'
 import styles from './css/main.module.css'
@@ -93,7 +93,12 @@ const App = () => {
 
             <div className={cx('logo')}>
               <NavLink to='/home'>
-                <p style={{ color: 'black' }}>BULI SHOP</p>
+                <p style={{ color: 'black' }}>
+                <img
+                src={Logo}
+                alt="BULI - Wear is Swag"
+              />
+                </p>
 
               </NavLink>
             </div>
@@ -264,8 +269,8 @@ const App = () => {
 
               <p>
                 <p><i className="fa-solid fa-map-location-dot"></i><span>Địa Chỉ: 122 Triều Khúc, Thanh Xuân, Hà Nội</span></p>
-                <p><i className="fa-solid fa-phone"></i><span>Điện Thoại: (+84)812.666.218</span></p>
-                <p><i className="fa-solid fa-envelope"></i> <span>Email: thewindgroup.vn@gmail.com</span></p>
+                <p><i className="fa-solid fa-phone"></i><span>Điện Thoại: 0812.666.218</span></p>
+                <p><i className="fa-solid fa-envelope"></i> <span>Email: bulishop6666@gmail.com</span></p>
                 <p><i className="fa-solid fa-clock"></i><span>Thời Gian Mở Cửa: T2 - CN / 08:00 - 22:00</span></p>
               </p>
             </div>
@@ -276,6 +281,7 @@ const App = () => {
                 <p>Hàng Authentic 100%</p>
                 <p>Đổi trả trong vòng 20 ngày</p>
                 <p>Bảo trì quần áo</p>
+                <p>GÓP Ý, KHIẾU NẠI ( 08:30-20:30 ) 0812.666.218 Các ngày trong tuần ( trừ ngày lễ )</p>
 
               </p>
             </div>

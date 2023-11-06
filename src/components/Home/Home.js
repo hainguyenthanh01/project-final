@@ -76,6 +76,12 @@ const Home = () => {
               data-mdb-slide-to="1"
               aria-label="Slide 2"
             ></button>
+            <button
+              type="button"
+              data-mdb-target="#carouselBasicExample"
+              data-mdb-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
 
           <div className="carousel-inner">
@@ -93,6 +99,13 @@ const Home = () => {
 
             <div className="carousel-item">
               <img src={bg4} className="d-block w-100" alt="Canyon at Nigh" />
+              <div className="carousel-caption d-none d-md-block">
+                <h5>Rất nhiều thương hiệu mới</h5>
+                <p>Nhanh tay săn đón</p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img src={bg2} className="d-block w-100" alt="Canyon at Nigh" />
               <div className="carousel-caption d-none d-md-block">
                 <h5>Rất nhiều thương hiệu mới</h5>
                 <p>Nhanh tay săn đón</p>

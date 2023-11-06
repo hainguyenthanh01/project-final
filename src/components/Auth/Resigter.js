@@ -6,6 +6,7 @@ import axios from 'axios'
 import Swal from 'sweetalert2';
 import classNames from 'classnames/bind'
 import styles from '../../css/resigter.module.css'
+import Logo from "../../images/logo.svg"
 
 let cx = classNames.bind(styles);
 
@@ -157,8 +158,8 @@ const Resigter = () => {
 
                                 </MDBCol>
 
-                                <MDBCol md='10' lg='6' className='order-1 order-lg-2 d-flex align-items-center'>
-                                    <MDBCardImage src='https://insideretail.asia/wp-content/uploads/2022/07/1658580812384.jpeg' fluid />
+                                <MDBCol md='10' lg='6' className='order-1 order-lg-2 d-flex align-items-center justify-content-center'>
+                                    <MDBCardImage src={Logo} fluid />
                                 </MDBCol>
 
                             </MDBRow>

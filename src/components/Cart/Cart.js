@@ -193,11 +193,11 @@ const Cart = () => {
                                     <MDBListGroupItem
                                         className="d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                                         Phí vận chuyển
-                                        <span>50,000 VNĐ</span>
+                                        <span>0 VNĐ</span>
                                     </MDBListGroupItem>
                                     <MDBListGroupItem className="d-flex justify-content-between align-items-center px-0">
                                         Vận chuyển
-                                        <span>Gojeck</span>
+                                        <span>...</span>
                                     </MDBListGroupItem>
 
                                     <MDBListGroupItem
@@ -209,7 +209,7 @@ const Cart = () => {
                                             </strong>
                                         </div>
                                         <span>
-                                            <strong>{(total + (total * 0.1) + 50000).toLocaleString('en-US')} VNĐ</strong>
+                                            <strong>{(total + (total * 0.1) + 0).toLocaleString('en-US')} VNĐ</strong>
                                         </span>
                                     </MDBListGroupItem>
                                 </MDBListGroup>
