@@ -1,0 +1,136 @@
+.card {
+    width: 23vh;
+    margin-left: 5vh;
+    margin-bottom: 3vh;
+    color: gray;
+    .img {
+        img {
+            width: 80%;
+        }
+    }
+    &:hover {
+        color: black;
+        cursor: pointer;
+    }
+    .brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3vh;
+        margin-top: 1vh;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+    }
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 7vh;
+    }
+    .price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    }
+}
+.search {
+    margin-top: 4vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    input {
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        border-left: 1px solid gray;
+        outline: none;
+        background-color: transparent;
+        border-right: none;
+
+        padding: 10px;
+        font-size: 12px;
+        width: 30vh;
+    }
+    button {
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        border-right: 1px solid gray;
+        outline: none;
+        padding: 10px;
+        width: 6vh;
+        border-left: none;
+        background-color: gray;
+        color: white;
+        font-size: 12px;
+        margin-left: -2vh;
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.pagination > button,
+.pagination > input {
+    font-family: Arial, sans-serif;
+    margin: 0 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #f2f2f2;
+    color: #555;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.pagination > button:hover,
+.pagination > input:hover {
+    background-color: #ddd;
+}
+
+.pagination > button:disabled,
+.pagination > input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination > input {
+    width: 3rem;
+    text-align: center;
+}
+
+.pagination > div {
+    margin: 0 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+.selected {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: none;
+    background-color: #fff;
+    background-image: none;
+    appearance: none;
+    outline: none;
+}
+
+.selected option {
+    background-color: #fff;
+    color: #000;
+}
